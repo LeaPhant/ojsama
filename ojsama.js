@@ -214,7 +214,7 @@ if (typeof exports !== "undefined") {
 (function() {
 
 osu.VERSION_MAJOR = 2;
-osu.VERSION_MINOR = 1;
+osu.VERSION_MINOR = 0;
 osu.VERSION_PATCH = 0;
 
 // internal utilities
@@ -620,12 +620,6 @@ parser.prototype._metadata = function() {
     break;
   case "Version":
     this.map.version = p[1];
-    break;
-  case "BeatmapID":
-    this.map.beatmapId = parseInt(p[1]);
-    break;
-  case "BeatmapSetID":
-    this.map.beatmapsetId = parseInt(p[1]);
     break;
   }
 };
